@@ -1,0 +1,95 @@
+.exzoom_img_box {
+    background: #fafafa !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.exzoom_img_box .exzoom_main_img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.exzoom_preview {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    right: -100% !important;
+    left: auto !important;
+    z-index: 999 !important;
+    background-color: #fff !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.exzoom_nav {
+    margin-top: 10px !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.exzoom_nav .exzoom_nav_inner {
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 5px !important;
+}
+
+.exzoom_nav .exzoom_nav_inner span {
+    border: 2px solid #e0e0e0 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    cursor: pointer !important;
+}
+
+.exzoom_nav .exzoom_nav_inner span.current {
+    border-color: #007bff !important;
+}
+
+.exzoom_nav .exzoom_nav_inner span img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: cover !important;
+}
+
+.exzoom_zoom {
+    position: absolute !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+    display: none !important;
+    z-index: 5 !important;
+    cursor: crosshair !important;
+}
+
+.exzoom_img_ul_outer {
+    position: relative !important;
+    overflow: hidden !important;
+    width: 100% !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .exzoom_preview {
+        display: none !important;
+    }
+
+    .exzoom_nav .exzoom_nav_inner span img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+/* Hover effects */
+.exzoom_nav .exzoom_nav_inner span:hover {
+    border-color: #0056b3 !important;
+    transition: border-color 0.3s ease !important;
+}
+
+/* Zoom cursor styles */
+.exzoom_zoom_outer {
+    cursor: crosshair !important;
+}
+
+/* Animation for zoom preview */
+.exzoom_preview {
+    transition: all 0.3s ease !important;
+}

@@ -1,0 +1,80 @@
+﻿
+
+/** A - Menu Toggle Button  */
+.menu-toggle{height: 85px;float:right;display:table;transition:height .3s ease-in-out}
+#header.scrolling .menu-toggle{height:100px}
+.standard-menu .menu-toggle{display:none}
+.side-header .menu-toggle{display:none}
+.menu-toggle .inner{display:table-cell;vertical-align:middle}
+.toggle-button{width:22px;height:18px;transition:.25s;position:relative;display:block;z-index: 2;}
+.toggle-button:hover{cursor:pointer;color: #fff;}
+.toggle-button .menu-bar{position:absolute;border-radius:2px;width:100%;transition:.5s}
+.toggle-button .menu-bar-top{border-top: 3px solid #0d65b0;top:0;width:80%}
+.toggle-button .menu-bar-middle{height:3px;background-color: #0d65b0;margin-top:3px;margin-bottom:3px;top:4px}
+.toggle-button .menu-bar-bottom{border-bottom: 3px solid #0d65b0;top:14px;width:90%}
+.button-open .menu-bar-top{transform:rotate(45deg) translate(6px,6px);transition:.4s;width:100%}
+.button-open .menu-bar-middle{transform:translate(230px);transition:.1s ease-in;opacity:0}
+.button-open .menu-bar-bottom{transform:rotate(-45deg) translate(4px,-4px);transition:.4s;width:100%}
+
+.toggle-button:hover .menu-bar-top,
+.toggle-button:hover .menu-bar-middle,
+.toggle-button:hover .menu-bar-bottom
+{border-color: #949698;background-color: #949698;}
+
+.menu-open .toggle-button .menu-bar-top,
+.menu-open .toggle-button .menu-bar-middle,
+.menu-open .toggle-button .menu-bar-bottom
+{border-color: #fff;background-color: #fff;}
+
+.toggle-button.toggle-light .menu-bar-top,
+.toggle-button.toggle-light .menu-bar-middle,
+.toggle-button.toggle-light .menu-bar-bottom {border-color: #fff;background-color: #fff;}
+
+.toggle-button.toggle-light:hover .menu-bar-top,
+.toggle-button.toggle-light:hover .menu-bar-middle,
+.toggle-button.toggle-light:hover .menu-bar-bottom {border-color: #aeaeae;background-color: #aeaeae;}
+
+/**  B - Menu Overlay */
+#navigation{position:fixed;top:0;left:0;bottom:0;right:-17px;background: #0d65b0;z-index:-1;opacity:0;overflow-y:scroll;-webkit-transition:.4s ease-in-out;-moz-transition:.4s ease-in-out;-o-transition:.4s ease-in-out;transition:.4s ease-in-out}
+.ios-device #navigation{right:0}
+#navigation.show-menu{opacity:1;z-index: 2;}
+#navigation .inner{width:100%;height:100%;display:table}
+
+/** Standard Menu */
+.menu-wrapper{height:150px;float:right;display:table;transition:height .3s ease-in-out}
+#header.scrolling .menu-wrapper{height:100px}
+.menu{display:table-cell;vertical-align:middle}
+.menu li{float:left;margin-left:30px;list-style:none;font-family:Lato;text-transform:uppercase;font-size:11px;letter-spacing:2px;position:relative}
+.menu li a{color:#000}
+.dark-header .menu li a{color:#fff}
+.dark-header #header.scrolling .menu li a{color:#333}
+.menu li ul{display:none;position:absolute;top:30px;width:15em;margin:0;padding:1em 2em;background:#333;z-index:99999}
+.menu li ul li{float:none;margin-left:0}
+.menu li ul li a{color:#fff}
+.menu li ul li ul{display:none;top:0;left:11.9em;z-index:99999}
+
+/** Popup Menu */
+.main-menu{display:table-cell;vertical-align:middle;padding:100px 0}
+.main-menu li{font-size: 22px;text-align:center;color: #fff;list-style:none;padding: 8px 0;opacity:0;transform:translateY(15px);-webkit-transition:all .5s ease .2s;-moz-transition:all .5s ease .2s;-o-transition:all .5s ease .2s;transition:all .5s ease .2s}
+.main-menu li.visible{opacity:1;transform:translateY(0)}
+.main-menu li a{color: #fff;text-decoration:none;text-transform: capitalize;letter-spacing: 0.5px;cursor:pointer;text-transform: uppercase;}
+.main-menu li a:hover{color: #cbcbcb;}
+.main-menu li.menu-item-has-children a::after{content:'';width:0;height:0;border-style:solid;border-width: 5px 5px 0;border-color: #fff transparent transparent;position:absolute;top: 16px;margin-left:8px;transition:.2s}
+.main-menu li.menu-item-has-children.open a::after{transform:rotate(180deg)}
+.main-menu li.menu-item-has-children li a::after{border-color:transparent}
+.main-menu li ul{margin: 5px;display:none}
+.main-menu li li{font-size: 16px;font-weight:400;margin:0;padding: 2px 0;}
+.main-menu li li a{color: #ffffffe6;}
+.main-menu li li a:hover{color: #c5c5c5;}
+.main-menu li.visible{visibility:visible}
+.standard-menu #header .social-sharing{float:right;margin:0 0 0 40px}
+.standard-menu #header .social-sharing li{line-height:150px;width:24px;transition:height .3s ease-in-out}
+.standard-menu #header .social-sharing li a{display:inline-block;background:transparent}
+.social-sharing li{list-style:none;float:left;margin:0 10px 0 0;padding:0}
+.social-sharing li a{width:34px;height:34px;line-height:34px;border-radius:50%;-o-border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;text-align:center;background:#f6f6f6;display:block}
+.social-sharing li a:hover{background:#333;color:#fff}
+@media (max-width: 778px)
+{
+    .head-menu{}
+        .menu-toggle{height: 100px;position: absolute;right: 20px;top: 0;}
+}

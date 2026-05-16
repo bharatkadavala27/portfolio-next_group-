@@ -1,0 +1,290 @@
+.theme-color{
+ background-color:  #2561a8 !important;
+}
+
+.theme-text{
+  color:  #2561a8 !important;
+ }
+
+/* Ensure the navbar container uses flexbox */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Center the search bar within the available space */
+  .search-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    position: relative;
+    margin-top: 20px;
+  }
+
+  /* Align the logo to the left corner */
+  .navbar-logo {
+    max-width: 200px; /* Set a max width for the logo */
+    width: auto;
+  }
+
+  .search-container.active input {
+    width: 200px;
+    opacity: 1;
+
+  }
+
+  /* Optional: Style for the search icon */
+  .search-container .material-icons {
+    cursor: pointer;
+    align-items: center;
+  }
+
+  /* Style for the sub-navbar */
+  .navbar-nav {
+    display: flex;
+    width: 100%; /* Make navbar-nav take up full width */
+  }
+
+  .navbar-nav .left-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .navbar-nav .right-group {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-nav .nav-item {
+    padding: 0 15px; /* Adjust padding to space out items further if necessary */
+  }
+
+  .container {
+    overflow: hidden;
+    .slider {
+      animation: slidein 30s linear infinite;
+      white-space: nowrap;
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+        .fab {
+          width: calc(100% / 5);
+          animation: fade-in 0.5s
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
+      }
+    }
+  }
+
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* contact-us */
+/*
+.containerr {
+  background: #FFFFFF;
+  width: 70%;
+  height: 650px;
+  margin: 5% auto;
+  position: relative;
+} */
+.containerr .map {
+  width: 45%;
+  float: left;
+}
+.containerr .contact-form {
+  width: 30%;
+  margin-left: 2%;
+  float: left;
+}
+.containerr .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 5% 8%;
+}
+.containerr .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 4% 5% 8%;
+}
+.containerr .contact-form input,
+.containerr .contact-form textarea {
+  width: 500px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+.containerr .contact-form input::placeholder,
+.containerr .contact-form textarea::placeholder {
+  color: #242424;
+}
+.containerr .contact-form .btn-send {
+  background: #2737e3;
+  width: 180px;
+  height: 60px;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+}
+
+
+
+/* General Footer Styles */
+.footer {
+  background-color: #eaf3fa; /* Light blue background */
+  color: #333; /* Darker text color */
+  font-family: Arial, sans-serif;
+  /* padding: 0px 0px 0px 0px; */
+  margin-top: 50px;
+  border-top: 1px solid #d0e1f0;
+}
+
+.footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer .col-sm-2, .footer .col-md-2 {
+  flex: 0 0 10%; /* Flex width for 4 columns */
+  margin-bottom: 20px;
+}
+.footer .col-sm-3, .footer .col-md-3 {
+  flex: 0 0 15%; /* Flex width for 4 columns */
+  margin-bottom: 20px;
+}
+
+.footer img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer h3 {
+  font-size: large;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: black; /* Dark blue heading */
+}
+
+.footer .list,
+.footer .address {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .list li,
+.footer .address li {
+  margin-bottom: 10px;
+}
+
+.footer i{
+  color: black;
+}
+
+.footer .list li a {
+  text-decoration: none;
+  color: black; /* Link color */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer .list li a:hover {
+  color: gray; /* Darker blue on hover */
+}
+
+.footer .address li i {
+  color:black; /* Icon color */
+}
+
+.footer .address li p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Copyright Section */
+.copyrights {
+  background-color: #d0e1f0; /* Slightly darker blue */
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  color: black; /* Grey text */
+}
+
+.copyrights a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyrights a:hover {
+  color: #003b80;
+  text-decoration: underline;
+}
+
+/* General Styles for Address List */
+.address li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.address li i {
+  font-size: 18px; /* Icon size */
+  margin-right: 10px; /* Spacing between icon and text */
+  color: #0056b3; /* Icon color */
+}
+
+.address li p {
+  margin: 0; /* Remove default margin for alignment */
+  font-size: 14px; /* Text size */
+  color: #333; /* Text color */
+  line-height: 1.5; /* Spacing between lines for multiline addresses */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .footer .row {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .footer .col-sm-3, .footer .col-md-3 {
+      flex: 0 0 100%;
+  }
+}
+

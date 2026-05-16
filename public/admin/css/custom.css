@@ -1,0 +1,20 @@
+/* Fix Summernote List Styles */
+.note-editable ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+    margin-bottom: 1rem !important;
+}
+
+.note-editable ol {
+    list-style-type: decimal !important;
+    padding-left: 40px !important;
+    margin-bottom: 1rem !important;
+}
+
+.note-editable ul ul {
+    list-style-type: circle !important;
+}
+
+.note-editable ol ol {
+    list-style-type: lower-alpha !important;
+}

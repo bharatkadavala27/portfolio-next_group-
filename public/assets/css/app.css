@@ -1,0 +1,42 @@
+public/css/app.css
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-body {
+    display: flex;
+    gap: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-status {
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.product-description {
+    margin: 15px 0;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}

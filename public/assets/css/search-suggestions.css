@@ -1,0 +1,43 @@
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for the dropdown effect */
+    border-radius: 4px; /* Optional: round the corners */
+    overflow: hidden; /* Ensure rounded corners are respected */
+}
+
+.search-results a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease-in-out; /* Add a smooth transition for hover effect */
+}
+
+.search-results a:hover {
+    background-color: #f0f0f0;
+}
+
+.search-results p {
+    padding: 10px;
+    margin: 0;
+    color: #777;
+}
+
+#search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
+    z-index: 1000;
+}
